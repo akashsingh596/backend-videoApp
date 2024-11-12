@@ -7,10 +7,10 @@
   "scripts": {
     "dev": "nodemon src/index.js"
   },
-  
   "author": "Akash Singh",
   "license": "ISC",
   "devDependencies": {
-    "nodemon": "^3.1.7"
+    "nodemon": "^3.1.7",
+    "prettier": "^3.3.3"
   }
 }
