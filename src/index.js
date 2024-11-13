@@ -8,7 +8,19 @@ dotenv.config({
   path: "./env",
 });
 
-connectDB();
+connectDB()
+  .then(() => {
+    app.listen(process.env.PORT || 8000, () => {
+      console.log(`Server Is Runnig at ${process.env.PORT}`);
+    });
+    app.on("error", (error) => {
+      console.log("Error !!!", error);
+      throw error;
+    });
+  })
+  .catch((error) => {
+    console.log("Failed to connect the DB", error);
+  });
 
 /*
 import express from "express";
