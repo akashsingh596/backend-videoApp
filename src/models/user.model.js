@@ -31,7 +31,6 @@ const userSchema = new Schema(
       type: String, // cloundinary url
       required: true,
     },
-    
     coverImage: {
       type: String,
     },
