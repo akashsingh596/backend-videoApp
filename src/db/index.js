@@ -13,6 +13,7 @@ const connectDB = async () => {
   } catch (error) {
     console.log(`Failed To Connect DataBase ERROR`, error);
     process.exit(1);
+    
   }
 };
 
